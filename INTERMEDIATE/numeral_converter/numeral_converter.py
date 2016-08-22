@@ -36,5 +36,5 @@ def convert_to_english (romanstring, outnum=0):
         if romanstring[:len(i[0])] == i[0]:
             return convert_to_english(romanstring[len(i[0]):], outnum+i[1])
 
-print convert_to_roman(3459)
-print convert_to_english("MMMCDLIX")
+print(convert_to_roman(3459))
+print( convert_to_english("MMMCDLIX"))
