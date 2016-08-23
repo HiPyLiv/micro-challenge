@@ -28,5 +28,5 @@ def convert_to_english (romanstring, outnum=0):
     '''
     return
 
-print convert_to_roman(3459)
-print convert_to_english("MMMCDLIX")
+print(convert_to_roman(3459))
+print(convert_to_english("MMMCDLIX"))
