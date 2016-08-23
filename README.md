@@ -9,4 +9,4 @@ We recommend that during the meet you work on these challenges in pairs (or thre
 
 # Feedback
 
-Don't forget to let us know what you think of the challenges. Can we make them better? Can you suggest additional challenges that would be useful in the context of your own field or study/research? Talk to us.
+Don't forget to let us know what you think of the challenges. Can we make them better? Can you suggest additional challenges that would be useful in the context of your own field of study/research? Talk to us.
