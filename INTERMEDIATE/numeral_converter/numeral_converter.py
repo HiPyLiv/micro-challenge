@@ -37,4 +37,6 @@ def convert_to_english (romanstring, outnum=0):
             return convert_to_english(romanstring[len(i[0]):], outnum+i[1])
 
 print(convert_to_roman(3459))
-print( convert_to_english("MMMCDLIX"))
+print(convert_to_english("MMMCDLIX"))
+print(convert_to_roman(148))
+print(convert_to_english("CXLVIII"))
