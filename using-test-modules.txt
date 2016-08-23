@@ -1,0 +1,11 @@
+Using test modules:
+
+I've added test modules to two of the challenges - numeral converter, and palindrome checker.
+These modules provide a way to test a wide variety of cases very quickly. Simply run the test
+module (e.g "python numeral_test.py" on the command-line) to see if your script works as
+intended.
+
+These tests are written in Python, so make sure to have a read of the code and try to 
+understand how they are working.
+
+- Sam 
