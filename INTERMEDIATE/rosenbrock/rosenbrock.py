@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.mlab import griddata
@@ -5,10 +6,13 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
 
 
+=======
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
 def rosen(x, y, a=1, b=100):
     '''
     Input x and y values and return value for Rosenbrock function
     '''
+<<<<<<< HEAD
     f = (a - x)**2 + b*(y-x**2)**2
     return f
 
@@ -29,6 +33,15 @@ def plot3D(x, y, func):
 if __name__ == "__main__":
     x = y = np.linspace(-3, 3, 100)
     plot3D(x, y, rosen)
+=======
+    return 
+
+def plot3D(x, y, func):
+    '''
+    Input x/y lists and a 2D function and generate a 3D surface plot
+    '''
+
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
     
 
     

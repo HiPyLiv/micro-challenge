@@ -15,6 +15,7 @@ def read_to_col(fPath):
     transpose data into columns and return as list of lists
     remember - first column is x data
     '''
+<<<<<<< HEAD
     data = [] # define empty data list
 
     with open(fPath, 'r') as f: # open file loop
@@ -25,10 +26,15 @@ def read_to_col(fPath):
             data.append([float(x) for x in line.split(",")])
 
     return np.transpose(data) # don't forget to transpose
+=======
+
+    return
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
 
 def split_data(data):
     '''
     reads in list of lists containing column data
+<<<<<<< HEAD
     creates dictionary for x values - add to generator
     creates dictionary for each column of y data,
     defines dict key as three digit integer filename
@@ -37,6 +43,14 @@ def split_data(data):
     yield {"x": data[0]} # give up x dictionary to generator
     for idx, lst in enumerate(data[1:]): # loop through rest of lists and keep increment through index idx
         yield {"{0}.csv".format(str(idx+1).zfill(3)): lst}
+=======
+    creates dictionary for x values - yields to generator
+    creates dictionary for each column of y data,
+    defines dict key as three digit integer filename
+    (e.g. 001.csv) - yields each y dict to generator
+    '''
+    yield
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
 
 def save_data(gen, dPath):
     '''
@@ -44,6 +58,7 @@ def save_data(gen, dPath):
     for each y dict in generator - x,y columns written to file 
     filename is key of y dict
     '''
+<<<<<<< HEAD
     x = next(gen).get("x", None)
     for item in gen:
         fPath = next(iter(item))
@@ -53,6 +68,12 @@ def save_data(gen, dPath):
                 f.write("{0},{1}\n".format(i, j))
 
 if __name__ == "__main__":
+=======
+
+if __name__ == "__main__":
+    # arg1 - filename to be split
+    # arg2 - save directory
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
     data = read_to_col(sys.argv[1])
     split = split_data(data)
     save_data(split, str(sys.argv[2]))

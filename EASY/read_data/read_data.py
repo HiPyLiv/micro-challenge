@@ -15,6 +15,7 @@ def read_to_row(fPath):
     return a list of lists containing row data
     '''
 
+<<<<<<< HEAD
     data = [] # define empty list
 
     # open file to read
@@ -26,13 +27,21 @@ def read_to_row(fPath):
             data.append([float(x) for x in line.split(",")])
 
     return data # return the list
+=======
+    return 
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
 
 def read_to_col(fPath):
     '''
     return transposed data as a list of lists containing column data
     '''
+<<<<<<< HEAD
     return np.transpose(read_to_row(fPath)) # just transpose the rows
 
 if __name__ == "__main__":
     print(read_to_row(sys.argv[1]))
+=======
+    return
+
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
 

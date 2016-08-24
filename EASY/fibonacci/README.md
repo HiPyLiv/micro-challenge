@@ -13,7 +13,11 @@ This challenge gets you to generate the n<sup>th</sup> number in the fibonacci s
 
 ## Resources
 
+<<<<<<< HEAD
   + None
+=======
+  + [Video Walkthrough](https://youtu.be/WXzjeg_mvw8)
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
 
 
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 Matplotlib Animation Example
 
@@ -35,3 +36,15 @@ anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=200, interval=20, blit=True)
 
 plt.show()
+=======
+'''
+Objectives:
+    - use matplotlib animate to plot a moving sine curve
+    - plot a standing wave
+
+Resources:
+    - http://matplotlib.org/api/animation_api.html#matplotlib.animation.FuncAnimation
+    - Googling this one will help
+'''
+
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
