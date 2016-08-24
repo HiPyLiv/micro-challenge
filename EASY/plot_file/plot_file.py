@@ -15,6 +15,7 @@ def plot_file(fPath, xlabel='', ylabel='', sPath=None):
     '''
     Plots data  comma separated .txt or .csv file
     Uses solution to read_data challenge to read/format data
+<<<<<<< HEAD
     '''
     fig = plt.figure() # define figue object
     ax = fig.add_subplot(111) # add axis
@@ -44,4 +45,11 @@ if __name__ == "__main__":
         save = None
 
     plot_file(sys.argv[1], xlabel, ylabel, save)
+=======
+    fPath - path to data file
+    xlabel - string label for x-axis
+    ylabel - string label for y-axis
+    sPath - path to save output .png file
+    '''
+>>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7
 
