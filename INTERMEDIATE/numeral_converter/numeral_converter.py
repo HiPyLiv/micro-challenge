@@ -22,17 +22,21 @@ def convert_to_roman (number, output=""):
     '''Takes a number as an int, and returns a string of roman numerals
        with the same value.
     '''
-    return
+    if number == 0:
+        return output
+    for i in lookuptable:
+        if i[1] <= number:
+            return convert_to_roman((number-i[1]), output+i[0])
 
 def convert_to_english (romanstring, outnum=0):
     '''Takes a string of roman numerals, and returns an integer with
        the same value
     '''
-    return
+    if len(romanstring) == 0:
+        return outnum
+    for i in lookuptable:
+        if romanstring[:len(i[0])] == i[0]:
+            return convert_to_english(romanstring[len(i[0]):], outnum+i[1])
 
 print(convert_to_roman(3459))
-<<<<<<< HEAD:INTERMEDIATE/numeral_converter/numeral_converter.py
 print( convert_to_english("MMMCDLIX"))
-=======
-print(convert_to_english("MMMCDLIX"))
->>>>>>> eda6c503ffe797d9c4528a649910678aa52197d7:INTERMEDIATE/numeral_converter/numeral_converter.py
