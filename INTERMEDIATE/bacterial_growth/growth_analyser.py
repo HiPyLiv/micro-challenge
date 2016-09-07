@@ -16,22 +16,15 @@ def state_split (series, state_table):
     '''
     return
 
-def growth_rate (log_series):
+def exponent_rate (log_series):
     '''
-    Bacteria grow exponentially, by log transforming the series and
+    Bacteria grow and die exponentially, by log transforming the series and
     measuring the average difference between each transform point,
-    you can get a unique measure of bacterial growth rate.
+    you can get a unique measure of bacterial growth and death rate.
     '''
     return
 
-def death_rate (death_series):
-    '''
-    Similar to above, bacteria will die out once available resources
-    are exhausted, the rate at which they do so can be useful to know.
-    '''
-    return
-
-def bacterial_metrics (inputfile, outputfile):
+def bacterial_metrics (inputfile):
     '''
     Reads series and bacteria names from input file, and converts into
     discrete series.
@@ -40,6 +33,9 @@ def bacterial_metrics (inputfile, outputfile):
     Growth rate constant,
     Maximum bactrial number,
     Death rate constant
-    Outputs these metrics as csv file.
+    Outputs these metrics as a list of dicts.
     '''
     return
+
+for met in bacterial_metrics("bacseries.txt"):
+    print(met)
